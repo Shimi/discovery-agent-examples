@@ -1,0 +1,8 @@
+description "pong"
+
+start on runlevel [2345]
+stop on runlevel [016]
+setuid vagrant
+respawn
+
+exec /var/local/pong/run.sh
